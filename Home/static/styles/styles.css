@@ -1,0 +1,314 @@
+body {
+    background-color: #333;
+}
+
+.cabecera {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    font-family: Blogger Sans, serif;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+.fa-bars-staggered {
+    font-size: 25px;
+    color: rgb(255, 153, 0);
+    margin-right: 10px;
+    transition: color 0.2s;
+}
+
+.fa-bars-staggered:hover {
+    color: rgb(255, 204, 51);
+}
+
+.nav-bar {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-family: Blogger Sans, serif;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    width: 150px;
+    height: auto;
+    overflow: hidden;
+    transition: height 0.3s ease-out;
+    margin-top: 5px;
+    margin-right: 10px;
+    z-index: 1;
+    cursor: pointer;
+    position: absolute;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav-bar li {
+    display: inline;
+}
+
+.nav-bar a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-align: left;
+    padding-left:48px;
+    text-decoration: none;
+    transition: color 0.2s, background-color 0.2s;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.nav-bar a:hover {
+    color: rgb(255, 204, 51);
+    background-color: dimgray;
+    cursor: pointer;
+}
+
+.sort {
+    justify-content: center;
+    margin-top: 10px;
+    min-width: min-content;
+    max-width: max-content;
+}
+
+.sort a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.2s, background-color 0.2s;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+}
+
+.sort a:hover {
+    color: rgb(255, 204, 51);
+    background-color: dimgray;
+    cursor: pointer;
+}
+
+.sort ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sort li {
+    display: inline;
+    background-color: #333;
+    border-radius: 5px;
+    float: left;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    margin: 5px 5px 20px;
+}
+
+.barra {
+    width: 750px;
+    height: 380px;
+    display: inline-block;
+    background: transparent;
+    margin-top: 20px;
+    vertical-align: bottom;
+}
+
+.container {
+    width: 390px;
+    height: 750px;
+    display: block;
+    float: left;
+}
+
+.bar {
+    margin: 10px;
+}
+
+.boton {
+    display: flex;
+    align-items: center;
+}
+
+button.ordenar {
+    background-color: transparent;
+    color: #333;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border: none;
+    margin: 10px 5px 20px 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.ordenar:hover {
+    background-color: dimgray;
+}
+
+button.ordenar:hover .fa-play {
+    color: rgb(255, 204, 51);
+
+}
+
+button.desordenar {
+    background-color: transparent;
+    color: #333;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border: none;
+    margin: 10px 10px 20px 5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.desordenar:hover {
+    background-color: dimgray;
+}
+
+button.desordenar:hover .fa-shuffle {
+    color: rgb(255, 204, 51);
+}
+
+.fa-play {
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+}
+
+.fa-shuffle {
+    font-size: 30px;
+    padding: 10px;
+    color: white;
+}
+
+.info {
+    position: absolute;
+    top: 67px;
+    right: 0; 
+    width: 480px;
+    margin: 10px;
+    height: 85%; 
+    background-color: transparent;
+    color: white;
+    display: block;
+}
+
+.info h1 {
+    font-size: 35px;
+    font-family: Blogger Sans, serif;
+    text-align: center;
+    padding: 3px 10px;
+}
+
+.info .title {
+    background-color: #333;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    width: max-content;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.info .tabla {
+    margin-top: 20px;
+}
+
+.info .tabla table {
+    margin: auto;
+    border-collapse: collapse;
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+.tabla th, .info .tabla td {
+    border: 3px solid rgb(255, 153, 0);
+    padding: 8px;
+    text-align: left;
+    font-family: Blogger Sans, serif;
+    font-size: 30px;
+}
+
+.info .tabla th {
+    background-color: #333;
+    color: white;
+}
+  
+.info .tabla td {
+    text-align: left;
+}
+
+.info .tabla td .super {
+    font-size: 15px;
+}
+
+#displayValue {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.contador {
+    width: 300px;
+    
+}
+
+.rango {
+    width: max-content;
+    display: flex;
+    
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1250px) {
+    .info {
+        position: relative;
+        margin: auto;
+    }
+    .barra {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .boton {
+        text-align: center;
+        width: auto;
+        flex-direction: column;
+    }
+    .rango {
+        margin: auto;
+    
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .info {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .rango {
+        width: 95%;
+        margin: auto;
+    }
+}

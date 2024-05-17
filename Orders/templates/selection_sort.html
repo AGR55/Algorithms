@@ -1,0 +1,48 @@
+{% extends "sort.html" %}
+
+{% block content1 %}
+<div class="sort">
+    <div class="boton">
+        <div class="botones">
+            <button class="ordenar" onclick="selectionSort()" aria-label="Ordenar">
+                <i class="fa-solid fa-play"></i>
+            </button>
+            <button value="Desordenar" class="desordenar" onclick="desordenarArreglo()" aria-label="Desordenar">
+                <i class="fa-solid fa-shuffle"></i>
+            </button>
+        </div>
+        <div class="rango">
+            <input type="range" title="Count" class="contador" min="10" max="500" value="100" id="rangeInput" oninput="updateValue(this.value)">
+            <span id="displayValue"></span>
+        </div>
+    </div>
+    </div>
+{% endblock %}
+
+{% block content2 %}
+<div class="info">
+    <div class="title">
+        <h1>SELECTION SORT</h1>
+  </div>
+  <div class="tabla">
+    <table>
+        <tr>
+            <th>Average Complexity</th>
+            <td>O(n<sup class="super">2</sup>)</td>
+        </tr>
+        <tr>
+            <th>Best Case</th>
+            <td>O(n<sup class="super">2</sup>)</td>
+        </tr>
+        <tr>
+            <th>Worst Case</th>
+            <td>O(n<sup class="super">2</sup>)</td>
+        </tr>
+        <tr>
+            <th>Space Complexity</th>
+            <td>O(1)</td>
+        </tr>
+    </table>
+</div>
+    </div>
+{% endblock %}

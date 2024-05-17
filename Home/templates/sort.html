@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SORT</title>
+    
+    {% load static %}
+    
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
+    <script src="https://kit.fontawesome.com/7971e93029.js" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="fade">
+    <div class="cabecera">
+        <div class="section"><i class="fa-solid fa-bars-staggered"></i></div>
+        <div class="section"><h1>SORT</h1></div>
+    </div>
+    
+
+    <div class="nav-bar">
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="sort.html">SORT</a></li>
+            <li><a href="#">MORE..</a></li>
+        </ul>
+    </div>
+
+    <div class="sort">
+        <ul>
+            <li><a href="{% url 'bubble_sort' %}" style="{% if request.path == '/' %}
+            	color: rgb(255, 204, 51);
+            {% endif %} ">Bubble Sort</a></li>
+            <li><a href="{% url 'selection_sort' %}" style="{% if request.path == '/selectionsort/' %}
+                color: rgb(255, 204, 51);
+            {% endif %} ">Selection Sort</a></li>
+            <li><a href="{% url 'insertion_sort' %}" style="{% if request.path == '/insertionsort/' %}
+            	color: rgb(255, 204, 51);
+            {% endif %} ">Insertion Sort</a></li>
+            <li><a href="{% url 'heap_sort' %}" style="{% if request.path == '/heapsort/' %}
+            	color: rgb(255, 204, 51);
+            {% endif %} ">Heap Sort</a></li>
+            <li><a href="{% url 'merge_sort' %}" style="{% if request.path == '/mergesort/' %}
+            	color: rgb(255, 204, 51);
+            {% endif %} ">Merge Sort</a></li>
+            <li><a href="{% url 'quick_sort' %}" style="{% if request.path == '/quicksort/' %}
+            	color: rgb(255, 204, 51);
+            {% endif %} ">Quick Sort</a></li>
+        </ul>
+    </div>
+
+    {% block content1 %}
+
+    {% endblock %}
+
+    <div id="contenedor" class="barra"></div>
+
+    {% block content2 %}
+
+    {% endblock %}
+
+    <script src="{% static 'scripts/script.js' %}"></script>
+    </div>
+
+</body>
+</html>
